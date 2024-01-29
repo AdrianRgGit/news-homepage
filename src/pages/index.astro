@@ -2,18 +2,19 @@
 import Header from "@/components/Header/Header.astro";
 import Main from "@/components/Main/Main.astro";
 import Aside from "@/components/Aside/Aside.astro";
+import Footer from "@/components/Footer/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-  <div id="page-container" class="p-12 gap-6">
+  <div id="page-container" class="p-12 gap-8">
     <header class="[grid-area:header] flex items-center justify-between px-4">
       <Header />
     </header>
 
     <main class="[grid-area:main]"><Main /></main>
     <aside class="[grid-area:aside] bg-dark-blue-1 p-6"><Aside /></aside>
-    <footer class="[grid-area:footer] bg-orange-500">Footer</footer>
+    <footer class="[grid-area:footer]"><Footer /></footer>
   </div>
 </Layout>
 
