@@ -21,10 +21,16 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400, 700, 800;
+    src: url("/assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
   html {
-    font-family: system-ui, sans-serif;
-    color: white;
-    background: #13151a;
+    font-family: "Inter", system-ui, sans-serif;
+    color: black;
+    background: #;
     background-size: 224px;
   }
 </style>

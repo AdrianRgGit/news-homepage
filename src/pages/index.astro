@@ -1,11 +1,12 @@
 ---
+import Header from "../components/Header/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <div id="page-container" class="min-h-screen p-12 gap-12">
-    <header class="[grid-area:header] bg-yellow-500">Header</header>
+  <div id="page-container" class="min-h-screen p-12 gap-6">
+    <header class="[grid-area:header] bg-yellow-500 flex items-center justify-between px-4"><Header /></header>
+
     <main class="[grid-area:main] bg-green-500">Main</main>
     <aside class="[grid-area:aside] bg-purple-500">Aside</aside>
     <footer class="[grid-area:footer] bg-orange-500">Footer</footer>
@@ -20,7 +21,7 @@ import Card from "../components/Card.astro";
       "main main aside"
       "main main aside"
       "footer footer footer";
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr 2fr);
   }
 </style>
