@@ -1,4 +1,34 @@
 ---
+
 ---
 
-<p>Main</p>
+<div id="main-container" class="gap-x-2">
+  <img
+    src="assets/images/image-web-3-desktop.jpg"
+    alt="image"
+    class="[grid-area:image] mb-4"
+  />
+  <h1 class="[grid-area:title] text-7xl font-bold">
+    The Bright Future of Web 3.0?
+  </h1>
+  <div class="[grid-area:content] flex flex-col justify-between">
+    <p class="">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa
+      incidunt accusantium excepturi tempore! Ratione quis atque libero eligendi
+      facilis molestiae quidem autem iusto cum temporibus voluptatibus,
+      exercitationem minima error.
+    </p>
+    <button class="p-4 bg-red-1 rounded text-white-1 w-64 font-bold"
+      >READ MORE</button
+    >
+  </div>
+</div>
+
+<style>
+  #main-container {
+    display: grid;
+    grid-template-areas:
+      "image image"
+      "title content";
+  }
+</style>

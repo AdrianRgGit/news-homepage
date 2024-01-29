@@ -5,12 +5,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-  <div id="page-container" class="min-h-screen p-12 gap-6">
+  <div id="page-container" class="p-12 gap-6">
     <header class="[grid-area:header] flex items-center justify-between px-4">
       <Header />
     </header>
 
-    <main class="[grid-area:main] bg-green-500"><Main /></main>
+    <main class="[grid-area:main]"><Main /></main>
     <aside class="[grid-area:aside] bg-purple-500">Aside</aside>
     <footer class="[grid-area:footer] bg-orange-500">Footer</footer>
   </div>
@@ -22,9 +22,8 @@ import Layout from "../layouts/Layout.astro";
     grid-template-areas:
       "header header header"
       "main main aside"
-      "main main aside"
       "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr 2fr);
+    grid-template-rows: repeat(3, auto);
   }
 </style>
