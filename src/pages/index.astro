@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/Header/Header.astro";
 import Main from "@/components/Main/Main.astro";
+import Aside from "@/components/Aside/Aside.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -11,7 +12,7 @@ import Layout from "../layouts/Layout.astro";
     </header>
 
     <main class="[grid-area:main]"><Main /></main>
-    <aside class="[grid-area:aside] bg-purple-500">Aside</aside>
+    <aside class="[grid-area:aside] bg-dark-blue-1 p-6"><Aside /></aside>
     <footer class="[grid-area:footer] bg-orange-500">Footer</footer>
   </div>
 </Layout>

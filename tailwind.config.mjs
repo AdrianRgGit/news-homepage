@@ -10,7 +10,7 @@ export default {
 
         // Neutral
         "white-1": "hsl(36, 100%, 99%)",
-        "gray-1": "(233, 8%, 79%)",
+        "gray-1": "hsl(233, 8%, 79%)",
         "gray-2": "hsl(236, 13%, 42%)",
         "dark-blue-1": "hsl(240, 100%, 5%)",
       },
