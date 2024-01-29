@@ -1,15 +1,16 @@
 ---
-import Header from "../components/Header/Header.astro";
+import Header from "@/components/Header/Header.astro";
+import Main from "@/components/Main/Main.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Home">
   <div id="page-container" class="min-h-screen p-12 gap-6">
     <header class="[grid-area:header] flex items-center justify-between px-4">
       <Header />
     </header>
 
-    <main class="[grid-area:main] bg-green-500">Main</main>
+    <main class="[grid-area:main] bg-green-500"><Main /></main>
     <aside class="[grid-area:aside] bg-purple-500">Aside</aside>
     <footer class="[grid-area:footer] bg-orange-500">Footer</footer>
   </div>
